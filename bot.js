@@ -371,4 +371,8 @@ client.on('message', message => {
     }
     });
 
+client.on('ready', () => { //code bot not leave room voice //Bot Is Online
+    client.channels.get("559189246699634689").join(); //by :n3k4a 
+    });
+
 client.login(process.env.BOT_TOKEN);
