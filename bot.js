@@ -371,5 +371,23 @@ client.on('message', message => {
     }
     });
 
+client.on('message', message => {
+    if (message.content === '>help') {
+        let helpEmbed = new Discord.RichEmbed()
+        .setTitle('**أوامر البوت خخخخ**')
+        .addField('>play')
+        .addField('>stop')
+        .addField('>volume')
+        .addField('>vol')
+        .addField('>skip')
+        .addField('>queue')
+        .addField('>pause')
+        .addField('>resume')
+        .addField('>mute')
+        .addField('>unmute')
+        .setFooter('خخخخخخخخخخخخخخخخخخخخخخخخخ من الحب')
+      message.channel.send(helpEmbed);
+    }
+});
 
 client.login(process.env.BOT_TOKEN);
