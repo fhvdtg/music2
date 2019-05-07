@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "2";
+const prefix = ">";
 /////////////////////////
 ////////////////////////
 
@@ -313,7 +313,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '2help') {
+    if (message.content === '>help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('** اوامر بوت ميوزك عرب سيرفر،**')
         .setDescription('**برفكس البوت (!)**')
@@ -325,29 +325,29 @@ client.on('message', message => {
         .addField('resume', 'تكملة الاغنية')
         .addField('queue', 'اظهار قائمة التشغيل')
         .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
-        .setFooter('(1cmds) لاظهار الاوامر العامة')
+        .setFooter('(>cmds) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
 });
 
 client.on('message', message => {
-    if (message.content === '2cmds') {
+    if (message.content === '>cmds') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر عامة...**')
         .addField('avatar', "افاتار الشخص المطلوب")
         .addField('gif', 'البحث عن جيف انت تطلبه')
         .addField('ping', 'معرفة ping البوت')
-        .setFooter('عرب سيرفر سيقوم بتطوير البوت قريبا ان شاء الله')
+        .setFooter('خخخخخخخخخخخخخخخخخخخخخخخخخ من الحب')
       message.channel.send(helpEmbed);
     }
 });
 
 client.on('message', message => {
-    var prefix = ".2";
+    var prefix = ">";
       if (!message.content.startsWith(prefix)) return;
       var args = message.content.split(' ').slice(1);
       var argresult = args.join(' ');
-      if (message.author.id == 410052613996937217) return;
+      if (message.author.id == 436918120184021012) return;
     
     if (message.content.startsWith(prefix + 'p')) {
       client.user.setGame(argresult);
